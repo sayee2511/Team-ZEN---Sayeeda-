@@ -1,0 +1,116 @@
+.container{
+    display:flex;
+}
+
+.sidebar{
+    width:280px;
+    height:100vh;
+    background:#101523;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:40px;
+}
+
+.logo i{
+    font-size:38px;
+    color:#8B5CF6;
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+.logo p{
+    color:#9aa0b3;
+    font-size:14px;
+}
+
+.menu{
+    flex:1;
+}
+
+.menu li{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px;
+    margin-bottom:10px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.3s ease;
+    color:#ffffff;
+}
+
+.menu li:hover{
+    background:#1b2437;
+}
+
+.menu li.active{
+    background:#8B5CF6;
+    color:#ffffff;
+}
+
+.menu li i{
+    width:25px;
+    min-width:25px;
+    font-size:20px;
+    color:inherit;
+    text-align:center;
+}
+
+.menu li span{
+    color:inherit;
+    font-size:16px;
+    font-weight:500;
+}
+.menu li span{
+    color:#FFFFFF;
+    font-size:17px;
+    font-weight:500;
+}
+
+.menu li.active,
+.menu li.active span,
+.menu li.active i{
+    color:#FFFFFF;
+}
+
+.offline-card{
+    background:#182034;
+    padding:18px;
+    border-radius:15px;
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.offline-card i{
+    color:#22C55E;
+    font-size:24px;
+}
+
+.offline-card p{
+    color:#aaa;
+    font-size:13px;
+}
+
+.sos-btn{
+    margin-top:20px;
+    background:#B91C1C;
+    color:white;
+    padding:15px;
+    border-radius:12px;
+    font-size:16px;
+    transition:.3s;
+}
+
+.sos-btn:hover{
+    background:#DC2626;
+}
