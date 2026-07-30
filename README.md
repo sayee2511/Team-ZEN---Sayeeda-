@@ -105,13 +105,6 @@ The solution is designed with an intuitive Streamlit interface, making advanced 
 - Navigation assistance for visually impaired users
 
 ---
-
-## 🌐 Multilingual Support
-
-Supports communication across major Indian languages.
-
----
-
 ## 📡 Offline Functionality
 
 Works without an internet connection, making it suitable for:
@@ -124,85 +117,54 @@ Works without an internet connection, making it suitable for:
 
 # 🏗️ System Architecture
 
-text
-                      USER
+\`\`\`mermaid
+flowchart TD
+    A[USER] --> B[Voice / Camera / Document]
+    B --> C[Streamlit Frontend]
+    C --> D[Backend Controller - Python]
 
-                      │
+    D --> E[Voice Module]
+    D --> F[OCR Module]
+    D --> G[ISL Module]
+    D --> H["Object Detection (YOLOv8)"]
 
-          Voice / Camera / Document
+    E --> I[AI Processing Engine]
+    F --> I
+    G --> I
+    H --> I
 
-                      │
+    I --> J[Voice Output]
+    I --> K[Text Output]
+    I --> L[Live Camera]
 
-                      ▼
-
-             STREAMLIT FRONTEND
-
-                      │
-
-                      ▼
-
-        BACKEND CONTROLLER (Python)
-
-        ┌─────────────┼──────────────┐
-        │             │              │
-        ▼             ▼              ▼
- Voice Module      OCR Module     ISL Module
-        │                              │
-        └─────────────┬────────────────┘
-                      ▼
-            Object Detection (YOLOv8)
-
-                      │
-
-                      ▼
-
-             AI PROCESSING ENGINE
-
-                      │
-
-         ┌────────────┼────────────┐
-         │            │            │
-         ▼            ▼            ▼
-   Voice Output   Text Output  Live Camera
-
-                      │
-
-                      ▼
-
-                     USER
-
+    J --> M[USER]
+    K --> M
+    L --> M
+\`\`\`
 
 ---
 
 # ⚙️ Workflow
 
-text
-User Input
-     │
-     ▼
-Voice / Camera / Document Upload
-     │
-     ▼
-Streamlit Frontend
-     │
-     ▼
-Backend Controller
-     │
-     ├── Voice Assistant
-     ├── OCR Engine
-     ├── ISL Recognition
-     └── Object Detection
-     │
-     ▼
-AI Processing Engine
-     │
-     ▼
-Accessible Output
-(Text • Speech • Camera Feedback)
-     │
-     ▼
-User
+\`\`\`mermaid
+flowchart TD
+    A[User Input] --> B["Voice / Camera / Document Upload"]
+    B --> C[Streamlit Frontend]
+    C --> D[Backend Controller]
 
+    D --> E[Voice Assistant]
+    D --> F[OCR Engine]
+    D --> G[ISL Recognition]
+    D --> H[Object Detection]
+
+    E --> I[AI Processing Engine]
+    F --> I
+    G --> I
+    H --> I
+
+    I --> J["Accessible Output (Text • Speech • Camera Feedback)"]
+    J --> K[User]
+\`\`\`
 
 ---
 
