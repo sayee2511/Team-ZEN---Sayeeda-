@@ -11,6 +11,13 @@ __pycache__/
 # Models
 *.pt
 *.pth
+*.pkl
+
+# Dataset
+sign_language/dataset/
+
+# Generated data
+sign_language/data/landmarks.csv
 
 # OS files
 .DS_Store
