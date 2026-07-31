@@ -1,4 +1,4 @@
-# 🦾 SAKSHAM AI
+#  SAKSHAM AI
 ### Empowering Ability, Enhancing Life through AI-Powered Accessibility
 
 <p align="center">
@@ -12,7 +12,7 @@
 
 ---
 
-# 📑 Table of Contents
+#  Table of Contents
 
 - Overview
 - Problem Statement
@@ -21,12 +21,14 @@
 - System Architecture
 - Workflow
 - Technology Stack
+- Project Screenshots
 - Future Scope
+- Demo
 - Conclusion
 
 ---
 
-# 🌍 Overview
+#  Overview
 
 *SAKSHAM AI* is an AI-powered accessibility platform designed to empower individuals with visual, hearing, and speech impairments. The system integrates multiple assistive technologies into a single, offline-capable application, enabling users to communicate, access information, and navigate their surroundings independently.
 
@@ -50,7 +52,7 @@ These limitations create a critical need for an integrated, AI-powered assistive
 
 ---
 
-# 💡 Project Description
+#  Project Description
 
 *SAKSHAM AI* is an *offline, AI-powered assistive companion* that helps individuals with disabilities communicate and perform everyday tasks independently.
 
@@ -67,7 +69,7 @@ The solution is designed with an intuitive Streamlit interface, making advanced 
 
 ---
 
-# ✨ Key Features
+#  Key Features
 
 ## 🎤 Voice Assistant
 
@@ -105,6 +107,7 @@ The solution is designed with an intuitive Streamlit interface, making advanced 
 - Navigation assistance for visually impaired users
 
 ---
+
 ## 📡 Offline Functionality
 
 Works without an internet connection, making it suitable for:
@@ -115,60 +118,71 @@ Works without an internet connection, making it suitable for:
 
 ---
 
-# 🏗️ System Architecture
+#  System Architecture
 
-\`\`\`mermaid
-flowchart TD
-    A[USER] --> B[Voice / Camera / Document]
-    B --> C[Streamlit Frontend]
-    C --> D[Backend Controller - Python]
+```mermaid
+flowchart LR
 
-    D --> E[Voice Module]
-    D --> F[OCR Module]
-    D --> G[ISL Module]
-    D --> H["Object Detection (YOLOv8)"]
+    U[👤 User] --> I[Input Sources]
 
-    E --> I[AI Processing Engine]
-    F --> I
-    G --> I
-    H --> I
+    I --> V[🎤 Voice]
+    I --> C[📷 Camera]
+    I --> D[📄 Document]
 
-    I --> J[Voice Output]
-    I --> K[Text Output]
-    I --> L[Live Camera]
+    V --> F[🖥️ Streamlit Frontend]
+    C --> F
+    D --> F
 
-    J --> M[USER]
-    K --> M
-    L --> M
-\`\`\`
+    F --> B[⚙️ Python Backend]
 
+    B --> M1[🎤 Voice Assistant]
+    B --> M2[📖 OCR Module]
+    B --> M3[🤟 ISL Recognition]
+    B --> M4[👁️ Object Detection]
+
+    M1 --> O[🔊 Accessible Output]
+    M2 --> O
+    M3 --> O
+    M4 --> O
+
+    O --> U
+```
 ---
+#  Workflow
 
-# ⚙️ Workflow
+```mermaid
+flowchart LR
 
-\`\`\`mermaid
-flowchart TD
-    A[User Input] --> B["Voice / Camera / Document Upload"]
-    B --> C[Streamlit Frontend]
-    C --> D[Backend Controller]
+    A[👤 User] --> B[Provide Input]
 
-    D --> E[Voice Assistant]
-    D --> F[OCR Engine]
-    D --> G[ISL Recognition]
-    D --> H[Object Detection]
+    B --> C1[🎤 Voice]
+    B --> C2[📷 Camera]
+    B --> C3[📄 Document]
 
-    E --> I[AI Processing Engine]
-    F --> I
-    G --> I
-    H --> I
+    C1 --> D[🖥️ Streamlit UI]
+    C2 --> D
+    C3 --> D
 
-    I --> J["Accessible Output (Text • Speech • Camera Feedback)"]
-    J --> K[User]
-\`\`\`
+    D --> E[⚙️ Backend Controller]
 
----
+    E --> F1[Voice Assistant]
+    E --> F2[OCR]
+    E --> F3[ISL]
+    E --> F4[Object Detection]
 
-# 🛠️ Technology Stack
+    F1 --> G[Generate Result]
+    F2 --> G
+    F3 --> G
+    F4 --> G
+
+    G --> H[🔊 Speech Output]
+    G --> I[📝 Text Output]
+
+    H --> J[👤 User]
+    I --> J
+```
+
+#  Technology Stack
 
 | Category | Technologies |
 |----------|--------------|
@@ -182,8 +196,29 @@ flowchart TD
 | *Version Control* | Git, GitHub |
 
 ---
+## 📸 Project Screenshots
 
-# 🚀 Future Scope
+### SAKSHAM-AI - Complete UI Overview
+
+<table>
+  <tr>
+    <td align="center"><img src="./Images/dash.jpeg" width="245" alt="dashboard"><br><strong>1. Dashboard</strong></td>
+    <td align="center"><img src="./Images/voice.jpeg" width="245" alt="voice"><br><strong>2. Voice Assistant</strong></td>
+    <td align="center"><img src="./Images/sign.jpeg" width="245" alt="Sign"><br><strong>3. Sign Language</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./Images/tts.jpeg" width="245" alt="tts"><br><strong>4. Text to Speech</strong></td>
+    <td align="center"><img src="./Images/stt.jpeg" width="245" alt="stt"><br><strong>5. Speech to text</strong></td>
+    <td align="center"><img src="./Images/ocr.png" width="245" alt="ocr"><br><strong>6. OCR</strong></td>
+  </tr>
+</table>
+
+<p align="center">
+  <em>Privacy-Preserving AI-Powered Crowd Monitoring System</em>
+</p>
+
+
+#  Future Scope
 
 - AI-powered emergency SOS system
 - GPS-based navigation assistance
@@ -195,8 +230,15 @@ flowchart TD
 - Healthcare monitoring integration
 
 ---
+#  Demo Video
 
-# 🎯 Conclusion
+<div align="center">
+
+[![Watch Demo](https://img.shields.io/badge/▶%20Watch-Demo%20Video-red?style=for-the-badge)](https://drive.google.com/drive/folders/1k7myL-Og4b4LYcSfsACc1fORWfGhFzzI)
+
+</div>
+
+#  Conclusion
 
 SAKSHAM AI represents a significant step toward creating a more inclusive society by combining multiple accessibility technologies into one intelligent platform.
 
