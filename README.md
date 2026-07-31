@@ -214,7 +214,7 @@ flowchart LR
 </table>
 
 <p align="center">
-  <em>Privacy-Preserving AI-Powered Crowd Monitoring System</em>
+  <em>SAKSHAM AI-Empowering every voice!</em>
 </p>
 
 
