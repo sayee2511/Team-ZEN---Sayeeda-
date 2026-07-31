@@ -1,0 +1,253 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reading Assistant | Saksham AI</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/voice.css">
+    
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-hands-holding-circle"></i>
+
+            <div>
+
+                <h2>SAKSHAM AI</h2>
+
+                <p>Empowering Ability</p>
+
+            </div>
+
+        </div>
+
+        <ul class="menu">
+
+    <li onclick="window.location.href='../index.html'">
+        <i class="fa-solid fa-house"></i>
+        <span>Dashboard</span>
+    </li>
+
+    <li onclick="window.location.href='voice.html'">
+        <i class="fa-solid fa-microphone"></i>
+        <span>Voice Assistant</span>
+    </li>
+
+    <li onclick="window.location.href='sign.html'">
+        <i class="fa-solid fa-hands"></i>
+        <span>Sign Language</span>
+    </li>
+
+    <li onclick="window.location.href='ocr.html'">
+        <i class="fa-solid fa-file-lines"></i>
+        <span>Reading Assistant</span>
+    </li>
+
+    <li onclick="window.location.href='captions.html'">
+        <i class="fa-solid fa-closed-captioning"></i>
+        <span>Live Captions</span>
+    </li>
+
+    <li onclick="window.location.href='translate.html'">
+        <i class="fa-solid fa-language"></i>
+        <span>Translate</span>
+    </li>
+
+    <li>
+        <i class="fa-solid fa-wheelchair"></i>
+        <span>Accessibility</span>
+    </li>
+
+    <li>
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        <span>History</span>
+    </li>
+
+    <li>
+        <i class="fa-solid fa-gear"></i>
+        <span>Settings</span>
+    </li>
+
+</ul>
+
+        <div class="offline-card">
+
+            <i class="fa-solid fa-wifi"></i>
+
+            <div>
+
+                <h4>Offline Mode</h4>
+
+                <p>Core features available</p>
+
+            </div>
+
+        </div>
+
+        <button class="sos-btn">
+
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            Emergency SOS
+
+        </button>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Navbar -->
+
+        <nav class="navbar">
+
+            <div class="nav-left">
+
+                <h1>Reading Assistant</h1>
+                <p>Extract text from images and documents</p>
+
+            </div>
+
+            <div class="nav-right">
+
+                <button class="lang-btn">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    English
+
+                </button>
+
+                <button class="theme-btn">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+        <!-- Voice Assistant -->
+
+        <section class="voice-container">
+
+            <div class="voice-header">
+
+    <span class="voice-tag">
+        <i class="fa-solid fa-file-lines"></i>
+        AI Reading Assistant
+    </span>
+
+    <h2>OCR Text Extraction</h2>
+
+    <p>
+        Upload an image or document to extract text instantly using AI.
+    </p>
+
+</div>
+
+            <div class="mic-section">
+
+    <div class="mic-circle">
+        <i class="fa-solid fa-image"></i>
+    </div>
+
+    <button id="start-btn" class="primary-btn">
+        <i class="fa-solid fa-upload"></i>
+        Upload Image
+    </button>
+
+</div>
+
+            <div class="panels">
+
+    <div class="panel">
+
+        <h3>
+            <i class="fa-solid fa-comment-dots"></i>
+            Uploaded Image
+        </h3>
+
+        <textarea
+            id="transcript"
+            placeholder="Image preview will appear here..."
+        ></textarea>
+
+    </div>
+
+
+    <div class="panel">
+
+        <h3>
+            <i class="fa-solid fa-robot"></i>
+            Extracted Text
+        </h3>
+
+        <textarea
+            id="ai-response"
+            placeholder="Extracted text will appear here..."
+        ></textarea>
+
+    </div>
+
+</div>
+
+
+
+    <div class="voice-actions">
+
+    <button id="speak-btn" class="primary-btn">
+        <i class="fa-solid fa-file-lines"></i>
+        Extract Text
+    </button>
+
+    <button id="clear-btn" class="secondary-btn">
+        <i class="fa-solid fa-trash"></i>
+        Clear
+    </button>
+
+    </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/sidebar.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/voice.js"></script>
+
+</body>
+</html>

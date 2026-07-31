@@ -24,19 +24,7 @@
     <link rel="stylesheet" href="../css/sidebar.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/voice.css">
-    <div class="voice-actions">
-
-    <button class="primary-btn">
-        <i class="fa-solid fa-volume-high"></i>
-        Speak Response
-    </button>
-
-    <button class="secondary-btn">
-        <i class="fa-solid fa-trash"></i>
-        Clear
-    </button>
-
-</div>
+    
 
 </head>
 
@@ -64,52 +52,52 @@
 
         <ul class="menu">
 
-            <li onclick="window.location.href='../index.html'">
-                <i class="fa-solid fa-house"></i>
-                <span>Dashboard</span>
-            </li>
+    <li onclick="window.location.href='../index.html'">
+        <i class="fa-solid fa-house"></i>
+        <span>Dashboard</span>
+    </li>
 
-            <li class="active">
-                <i class="fa-solid fa-microphone"></i>
-                <span>Voice Assistant</span>
-            </li>
+    <li class="active" onclick="window.location.href='voice.html'">
+    <i class="fa-solid fa-microphone"></i>
+    <span>Voice Assistant</span>
+</li>
 
-            <li>
-                <i class="fa-solid fa-hands"></i>
-                <span>Sign Language</span>
-            </li>
+    <li onclick="window.location.href='sign.html'">
+        <i class="fa-solid fa-hands"></i>
+        <span>Sign Language</span>
+    </li>
 
-            <li>
-                <i class="fa-solid fa-file-lines"></i>
-                <span>Reading Assistant</span>
-            </li>
+    <li onclick="window.location.href='ocr.html'">
+        <i class="fa-solid fa-file-lines"></i>
+        <span>Reading Assistant</span>
+    </li>
 
-            <li>
-                <i class="fa-solid fa-closed-captioning"></i>
-                <span>Live Captions</span>
-            </li>
+    <li onclick="window.location.href='captions.html'">
+        <i class="fa-solid fa-closed-captioning"></i>
+        <span>Live Captions</span>
+    </li>
 
-            <li>
-                <i class="fa-solid fa-language"></i>
-                <span>Translate</span>
-            </li>
+    <li onclick="window.location.href='translate.html'">
+        <i class="fa-solid fa-language"></i>
+        <span>Translate</span>
+    </li>
 
-            <li>
-                <i class="fa-solid fa-wheelchair"></i>
-                <span>Accessibility</span>
-            </li>
+    <li>
+        <i class="fa-solid fa-wheelchair"></i>
+        <span>Accessibility</span>
+    </li>
 
-            <li>
-                <i class="fa-solid fa-clock-rotate-left"></i>
-                <span>History</span>
-            </li>
+    <li>
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        <span>History</span>
+    </li>
 
-            <li>
-                <i class="fa-solid fa-gear"></i>
-                <span>Settings</span>
-            </li>
+    <li>
+        <i class="fa-solid fa-gear"></i>
+        <span>Settings</span>
+    </li>
 
-        </ul>
+</ul>
 
         <div class="offline-card">
 
@@ -247,7 +235,22 @@
     </div>
 
 </div>
-            
+
+
+
+    <div class="voice-actions">
+
+    <button id="speak-btn" class="primary-btn">
+        <i class="fa-solid fa-volume-high"></i>
+        Speak Response
+    </button>
+
+    <button id="clear-btn" class="secondary-btn">
+        <i class="fa-solid fa-trash"></i>
+        Clear
+    </button>
+
+    </div>
 
         </section>
 
