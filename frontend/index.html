@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Saksham AI</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/sidebar.css">
+
+    <link rel="stylesheet"
+          href="css/navbar.css">
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+    <link rel="stylesheet"
+          href="css/responsive.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-hands-holding-circle"></i>
+
+            <div>
+
+                <h2>SAKSHAM AI</h2>
+
+                <p>Empowering Ability</p>
+
+            </div>
+
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-microphone"></i>
+                <span>Voice Assistant</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-hands"></i>
+                <span>Sign Language</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-file-lines"></i>
+                <span>Reading Assistant</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-closed-captioning"></i>
+                <span>Live Captions</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-language"></i>
+                <span>Translate</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-wheelchair"></i>
+                <span>Accessibility</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>History</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </li>
+
+        </ul>
+
+        <div class="offline-card">
+
+            <i class="fa-solid fa-wifi"></i>
+
+            <div>
+
+                <h4>Offline Mode</h4>
+
+                <p>Core features available</p>
+
+            </div>
+
+        </div>
+
+        <button class="sos-btn">
+
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            Emergency SOS
+
+        </button>
+
+    </aside>
+
+    <!-- Main Content -->
+
+   <main class="main-content">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="nav-left">
+            <h1>Dashboard</h1>
+            <p>Welcome back to Saksham AI</p>
+        </div>
+
+        <div class="nav-right">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                    type="text"
+                    placeholder="Search features..."
+                >
+            </div>
+
+            <button class="lang-btn">
+                <i class="fa-solid fa-globe"></i>
+                English
+            </button>
+
+            <button class="theme-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-left">
+
+            <span class="tag">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                AI Powered Accessibility
+            </span>
+
+            <h1>
+                Empowering Everyone Through
+                <span>Artificial Intelligence</span>
+            </h1>
+
+            <p>
+                Saksham AI combines Voice Assistance, OCR,
+                Sign Language Recognition, Live Captions,
+                and Translation into one intelligent platform
+                to make technology more accessible.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-btn" onclick="window.location.href='pages/voice.html'">
+                     <i class="fa-solid fa-microphone"></i>
+                     Start Voice
+                </button>
+
+                <button class="secondary-btn" onclick="window.location.href='pages/ocr.html'">
+                    <i class="fa-solid fa-file-lines"></i>
+                     Scan Text
+                </button>
+
+                <button class="secondary-btn" onclick="window.location.href='pages/sign.html'">
+                    <i class="fa-solid fa-hands"></i>
+                    Detect Sign
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <div class="status-card">
+
+                <h3>System Status</h3>
+
+                <div class="status-item">
+                    <span>Voice Assistant</span>
+                    <span class="online">● Online</span>
+                </div>
+
+                <div class="status-item">
+                    <span>OCR Engine</span>
+                    <span class="online">● Ready</span>
+                </div>
+
+                <div class="status-item">
+                    <span>Sign Language AI</span>
+                    <span class="online">● Ready</span>
+                </div>
+
+                <div class="status-item">
+                    <span>Translation</span>
+                    <span class="online">● Active</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Feature Cards -->
+
+    <section class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="card-top">
+                <i class="fa-solid fa-microphone"></i>
+                <span class="status ready">Ready</span>
+            </div>
+
+            <h3>Voice Assistant</h3>
+
+            <p>Real-time speech recognition and voice interaction.</p>
+
+            <div class="card-bottom">
+                <button id="voice-btn" onclick="window.location.href='pages/voice.html'">
+                    Launch →
+                </button>
+            </div>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="card-top">
+                <i class="fa-solid fa-hands"></i>
+                <span class="status active">Active</span>
+            </div>
+
+            <h3>Sign Language</h3>
+
+            <p>Detect and interpret sign language using AI.</p>
+
+            <div class="card-bottom">
+                 <button id="sign-btn" onclick="window.location.href='pages/sign.html'">
+                    Launch →
+                </button>
+            </div>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="card-top">
+                <i class="fa-solid fa-file-lines"></i>
+                <span class="status ready">Ready</span>
+            </div>
+
+            <h3>Reading Assistant</h3>
+
+            <p>Extract text from documents and images instantly.</p>
+
+            <div class="card-bottom">
+                <button id="ocr-btn" onclick="window.location.href='pages/ocr.html'">
+                    Launch →
+                </button>
+            </div>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="card-top">
+                <i class="fa-solid fa-closed-captioning"></i>
+                <span class="status live">Live</span>
+            </div>
+
+            <h3>Live Captions</h3>
+
+            <p>Generate captions in real time for conversations.</p>
+
+            <div class="card-bottom">
+               <button id="caption-btn" onclick="window.location.href='pages/captions.html'">
+                     Launch →
+                </button>
+            </div>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="card-top">
+                <i class="fa-solid fa-language"></i>
+                <span class="status ready">Ready</span>
+            </div>
+
+            <h3>Translate</h3>
+
+            <p>Translate text and speech across multiple languages.</p>
+
+            <div class="card-bottom">
+                <button id="translate-btn" onclick="window.location.href='pages/translate.html'">
+                    Launch →
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+</div>
+
+<script src="js/sidebar.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/api.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
